@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+</head>
+<body>
+<h1>Task 4</h1>
+<table style="width:100%; text-align: center">
+    <tr>
+        <td>Item Number</td>
+        <td>Name</td>
+        <td>Source</td>
+    </tr>
+
+    {% for result in results%}
+    <tr>
+        <td>{{result[0]}}</td>
+        <td>{{result[1]}}</td>
+        <td>{{result[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{ url_for( 'index' ) }}"> 
+    <button>Back</button>
+</a>
+</body>
+</html>
